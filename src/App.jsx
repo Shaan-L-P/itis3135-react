@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect } from 'react';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import SiteHeader from './components/SiteHeader.jsx';
