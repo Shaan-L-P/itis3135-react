@@ -20,7 +20,7 @@ function PageTitle() {
   const location = useLocation();
 
   useEffect(() => {
-    const pageName = pageTitles[location.pathname] ?? 'Home';
+    const pageName = pageTitles[location.pathname] || 'Home';
     document.title = `${siteName} | ${pageName}`;
   }, [location.pathname]);
 
