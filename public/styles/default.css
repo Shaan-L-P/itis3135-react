@@ -1,0 +1,320 @@
+/* Default stylesheet for the React3 site. The existing class selectors group related page elements and support consistent responsive styling. */
+:root {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #2a2a3a;
+  background: #b8d8fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --page-background: #b8d8fb;
+  --text-color: #2a2a3a;
+  --heading-color: #244f73;
+  --link-color: #2e3f9c;
+  --accent-color: #b8c8fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  background-color: var(--page-background);
+  color: var(--text-color);
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.site-shell {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h6 {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  margin: 0 0 35px;
+  color: var(--link-color);
+  background-color: var(--accent-color);
+  border-radius: 999px;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  margin-bottom: 35px;
+  color: var(--heading-color);
+  border-bottom: 4px dashed var(--link-color);
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  margin-top: 35px;
+  margin-bottom: 15px;
+  color: var(--heading-color);
+}
+
+h6.student-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--heading-color);
+  margin: 10px 0 25px;
+}
+
+a,
+a:visited {
+  color: var(--link-color);
+  font-weight: bold;
+}
+
+a:hover,
+a:focus-visible {
+  color: #2e1f66;
+}
+
+nav {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin: 0 12px;
+}
+
+.main-nav {
+  white-space: nowrap;
+}
+
+.main-nav a {
+  font-size: 0.85rem;
+  margin: 0 6px;
+  white-space: nowrap;
+}
+
+.secondary-nav {
+  margin-top: -25px;
+}
+
+.secondary-nav a {
+  font-size: 1.8rem;
+  margin: 0 12px;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  color: var(--heading-color);
+}
+
+.page-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 20px auto 30px;
+  border-radius: 8px;
+}
+
+.contract-logo {
+  max-width: 150px;
+}
+
+.about-logo {
+  max-width: 180px;
+}
+
+.home-page h2 {
+  margin-bottom: 35px;
+  color: #2f6f9f;
+}
+
+.home-logo {
+  display: block;
+  box-sizing: border-box;
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto 30px;
+  border-radius: 8px;
+}
+
+.home-page p {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: var(--heading-color);
+}
+
+.home-profile-links {
+  list-style: none;
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+.home-profile-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.home-profile-links a {
+  font-size: 1.8rem;
+}
+
+.profile-figure {
+  text-align: center;
+  margin: 20px auto 35px;
+}
+
+.profile-image {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-style: italic;
+  color: var(--heading-color);
+}
+
+ol {
+  font-size: 1.2rem;
+  padding-left: 30px;
+  color: var(--text-color);
+}
+
+ol li,
+.project-list li {
+  margin-bottom: 15px;
+}
+
+ol ol {
+  margin-top: 8px;
+  font-size: 1.05rem;
+}
+
+.project-list {
+  font-size: 1.2rem;
+  padding-left: 30px;
+  color: var(--text-color);
+}
+
+code {
+  color: var(--heading-color);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.contract-text {
+  margin-bottom: 25px;
+}
+
+.signature {
+  margin-top: 35px;
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 30px 20px;
+  padding: 20px 25px;
+  border-left: 5px solid var(--link-color);
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+.quote-credit {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  text-align: right;
+}
+
+footer {
+  font-size: 1.5rem;
+  margin-top: 35px;
+  color: var(--text-color);
+  border-top: 4px dashed var(--link-color);
+  padding-top: 20px;
+}
+
+footer p {
+  font-size: 1.1rem;
+  margin: 15px 0;
+  color: var(--text-color);
+  line-height: 1.8;
+}
+
+.home-route footer p {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px 12px;
+  }
+
+  .main-nav {
+    white-space: normal;
+  }
+
+  .main-nav a {
+    font-size: 1rem;
+    margin: 0 8px 8px;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .secondary-nav a {
+    font-size: 1.2rem;
+  }
+
+  p,
+  ol,
+  .project-list {
+    font-size: 1.1rem;
+  }
+
+  ol ol {
+    font-size: 1rem;
+  }
+
+  .home-page p,
+  .home-profile-links a {
+    font-size: 1.2rem;
+  }
+
+  .home-profile-links li {
+    margin-bottom: 8px;
+  }
+
+  blockquote {
+    margin: 20px 5px;
+    padding: 15px;
+  }
+
+  footer,
+  footer p {
+    font-size: 1.1rem;
+  }
+}
