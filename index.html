@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Shaan Patel's ITIS 3135 course website recreated with React." />
@@ -11,12 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/itis3135-react/styles/default.css" />
     <title>Shaan Patel's Silly Platypus | ITIS3135</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <!-- This root div and its id provide React's mount point. React uses class names to apply shared layout and styling; spans separate navigation links, and divs group footer and page content where needed. -->
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-
+    <script type="module" src="/itis3135-react/scripts/index.js"></script>
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
   </body>
 </html>
