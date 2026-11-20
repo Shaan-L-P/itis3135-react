@@ -28,8 +28,11 @@ function PageTitle() {
 }
 
 export default function App() {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
   return (
-    <div className="site-shell">
+    <div className={isHomePage ? 'site-shell home-route' : 'site-shell'}>
       <PageTitle />
       <SiteHeader />
       <Routes>
