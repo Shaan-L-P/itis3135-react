@@ -102,11 +102,6 @@ nav a {
   white-space: nowrap;
 }
 
-.main-nav a.active {
-  text-decoration-thickness: 3px;
-  text-underline-offset: 5px;
-}
-
 .secondary-nav {
   margin-top: -25px;
 }
@@ -145,6 +140,7 @@ p {
 
 .home-page h2 {
   margin-bottom: 35px;
+  color: #2f6f9f;
 }
 
 .home-logo {
