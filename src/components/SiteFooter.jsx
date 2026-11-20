@@ -17,6 +17,7 @@ export default function SiteFooter() {
         <a href="https://www.linkedin.com/in/shaan-patel-uncc/" target="_blank" rel="noreferrer">LinkedIn</a>
       </p>
 
+      {/* This div groups the designer credit and certification link as one footer section. */}
       <div className="footer-credit">
         <a href="https://shaanpateldesigns.com/index.html">Designed by Shaan Patel</a> &copy;2026
         {' | '}
