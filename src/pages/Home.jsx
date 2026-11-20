@@ -12,7 +12,7 @@ const profiles = [
 export default function Home() {
   return (
     <main className="home-page">
-      <h2>Home</h2>
+      <h2 className="home-heading">Home</h2>
 
       <img className="home-logo" src={logo} alt="Cartoon drawing of a brown platypus with a gray bill" />
 
