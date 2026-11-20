@@ -1,3 +1,4 @@
+import React from 'react';
 const logo = 'https://raw.githubusercontent.com/Shaan-L-P/shaan-l-p.github.io/main/itis3135/images/silly-platypus-logo.jpg';
 
 const profiles = [
