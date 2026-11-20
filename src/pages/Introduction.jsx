@@ -1,3 +1,4 @@
+import React from 'react';
 const bridgePhoto = 'https://raw.githubusercontent.com/Shaan-L-P/shaan-l-p.github.io/main/itis3135/images/brooklyn-bridge.jpg';
 
 export default function Introduction() {
