@@ -261,6 +261,10 @@ footer p {
   line-height: 1.8;
 }
 
+.home-route footer p {
+  font-size: 1.3rem;
+}
+
 @media (max-width: 600px) {
   body {
     padding: 15px 12px;
