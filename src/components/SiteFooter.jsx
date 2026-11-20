@@ -1,4 +1,5 @@
 import React from 'react';
+
 export default function SiteFooter() {
   return (
     <footer>
@@ -16,13 +17,13 @@ export default function SiteFooter() {
         <a href="https://www.linkedin.com/in/shaan-patel-uncc/" target="_blank" rel="noreferrer">LinkedIn</a>
       </p>
 
-      <p>
-        <a href="https://shaanpateldesigns.com/index.html">Designed by Shaan Patel</a> ©2026
+      <div className="footer-credit">
+        <a href="https://shaanpateldesigns.com/index.html">Designed by Shaan Patel</a> &copy;2026
         {' | '}
         <a href="https://www.freecodecamp.org/certification/shaanpateluncc/responsive-web-design-v9" target="_blank" rel="noreferrer">
           Certified in Responsive Web Design
         </a>
-      </p>
+      </div>
 
       <p><em>"Silly code, serious design."</em></p>
     </footer>
