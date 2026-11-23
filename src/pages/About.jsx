@@ -30,11 +30,8 @@ export default function About() {
         Throughout the development process, I've used Visual Studio Code
         (VS Code) as my primary code editor and Emmet to speed up writing
         HTML and CSS. These tools make it easier to organize code and build
-        pages more efficiently. I also use{' '}
-        <a href="https://divonbriesen.github.io/teaching/" target="_blank" rel="noreferrer">
-          Professor von Briesen's teaching site
-        </a>{' '}
-        as a resource for course materials, examples, and assignment guidance.
+        pages more efficiently. I also refer to the course materials, examples,
+        and assignment guidance provided by my instructor.
       </p>
 
       <h3>My Websites and Projects</h3>
