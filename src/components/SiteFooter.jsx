@@ -1,32 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function SiteFooter() {
+  const [footerMarkup, setFooterMarkup] = useState('');
+
+  useEffect(() => {
+    let isMounted = true;
+
+    fetch(`${import.meta.env.BASE_URL}components/footer.html`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Unable to load footer component: ${response.status}`);
+        }
+        return response.text();
+      })
+      .then((html) => {
+        if (isMounted) setFooterMarkup(html);
+      })
+      .catch((error) => console.error(error));
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
   return (
-    <footer>
-      <p className="footer-links">
-        <a href="https://webpages.charlotte.edu/spate338/" target="_blank" rel="noreferrer">CLT Web</a>
-        {' | '}
-        <a href="https://shaan-l-p.github.io/" target="_blank" rel="noreferrer">GitHub.io</a>
-        {' | '}
-        <a href="https://github.com/Shaan-L-P/shaan-l-p.github.io" target="_blank" rel="noreferrer">GitHub</a>
-        {' | '}
-        <a href="https://www.freecodecamp.org/shaanpateluncc" target="_blank" rel="noreferrer">freeCodeCamp</a>
-        {' | '}
-        <a href="https://www.codecademy.com/profiles/ShaanPatelUNCC" target="_blank" rel="noreferrer">Codecademy</a>
-        {' | '}
-        <a href="https://www.linkedin.com/in/shaan-patel-uncc/" target="_blank" rel="noreferrer">LinkedIn</a>
-      </p>
-
-      {/* This div groups the designer credit and certification link as one footer section. */}
-      <div className="footer-credit">
-        <a href="https://shaanpateldesigns.com/index.html">Designed by Shaan Patel</a> &copy;2026
-        {' | '}
-        <a href="https://www.freecodecamp.org/certification/shaanpateluncc/responsive-web-design-v9" target="_blank" rel="noreferrer">
-          Certified in Responsive Web Design
-        </a>
-      </div>
-
-      <p><em>"Silly code, serious design."</em></p>
-    </footer>
+    <div
+      className="shared-footer"
+      dangerouslySetInnerHTML={{ __html: footerMarkup }}
+    />
   );
 }
